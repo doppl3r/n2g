@@ -477,7 +477,7 @@ button:focus {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.accordion.active, .accordion:hover {
   background-color: #0a5da9;
 }
 
@@ -491,6 +491,8 @@ color: #222222;
   transition: max-height 0.2s ease-out;
     font-size: 18px;
 }
+
+.accordion.toggle[class*="active"] + .panel { max-height: initial !important; padding-bottom: 24px; }
 
 .accordion:after {
     content: '\002B';
@@ -779,20 +781,7 @@ div.navbar-brand {
    text-align:center;
 }
 
-#gp {
-   margin-bottom: 38px;
-}
-
-#gl {
-   margin-bottom: 38px;
-}
-
-#ca {
-   margin-bottom: 38px;
-}
-
-
-#wc {
+.mu-featured-products .mu-featured-img {
    margin-bottom: 38px;
 }
 
